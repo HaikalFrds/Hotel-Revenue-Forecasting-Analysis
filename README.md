@@ -21,6 +21,17 @@ Proyek ini mengembangkan sistem forecasting revenue untuk **FIT Online Revenue**
 - ✅ **Mengurangi Risiko Over/Under-Forecasting** yang berdampak ke cashflow
 - ✅ **Memberikan Dasar Data-Driven** untuk keputusan sales & marketing
 
+### 📦 **Repository Scope**
+
+Repository ini fokus pada **model development dan research** untuk Hotel Revenue Forecasting:
+- ✅ Data preprocessing & exploratory data analysis
+- ✅ Model experimentation (SARIMA, SARIMAX, LSTM, GRU)
+- ✅ Model evaluation & performance comparison
+- ✅ Best model selection & validation (SARIMAX)
+- ✅ Research documentation & insights
+
+**Note:** Production deployment (API & Web Application) dikembangkan oleh tim deployment di repository terpisah.
+
 ---
 
 ## 🏆 **Project Results**
@@ -164,32 +175,22 @@ graph LR
 
 ---
 
-## 🚀 **Deployment & Production**
+## 🚀 **Deployment**
+
+Model terbaik (SARIMAX) telah di-deploy ke production environment oleh tim deployment:
 
 ### 🌐 **Live Application**
 - **🔗 API Backend:** [https://backendsynergy-production.up.railway.app/docs](https://backendsynergy-production.up.railway.app/docs)
 - **🌍 Web Frontend:** [https://synergysquad.up.railway.app/](https://synergysquad.up.railway.app/)
 - **⚡ Status:** Production Ready & Live
 
-### 🛠️ **Tech Stack**
+### 👨‍💻 **Deployment Information**
+- **Deployment Engineer:** [@IPutuFerryWistika](https://github.com/putuwistika)
+- **Deployment Repository:** [https://github.com/putuwistika/backend_synergy](https://github.com/putuwistika/backend_synergy)
+- **Tech Stack:** FastAPI, Railway, Modern Web Framework
+- **Features:** Interactive dashboard, API documentation, real-time forecasting
 
-#### **Backend**
-- **Framework:** FastAPI
-- **ML Library:** Statsmodels, TensorFlow
-- **Deployment:** Railway
-- **API Documentation:** Swagger/OpenAPI
-
-#### **Frontend**
-- **Framework:** Modern Web Stack
-- **Features:** Interactive forecasting dashboard
-- **Deployment:** Railway
-- **UX:** User-friendly interface untuk non-technical users
-
-#### **ML Pipeline**
-- **Model:** SARIMAX
-- **Training:** Python, Pandas, NumPy
-- **Preprocessing:** Scikit-learn
-- **Validation:** Time series cross-validation
+**Note:** Deployment dan maintenance dilakukan di repository terpisah oleh tim deployment. Silakan kunjungi repository deployment untuk detail implementasi API dan web application.
 
 ---
 
@@ -243,7 +244,7 @@ pydantic >= 1.10.0
 
 ### ▶️ **Quick Start**
 
-#### **Run Locally**
+#### **Run Analysis Locally**
 ```bash
 # 1. Clone repository
 git clone https://github.com/synergy-squad/hotel-revenue-forecasting.git
@@ -253,20 +254,27 @@ cd hotel-revenue-forecasting
 pip install -r requirements.txt
 
 # 3. Run Jupyter notebook
-jupyter notebook hotel_revenue_forecasting.ipynb
+jupyter notebook notebooks/hotel_revenue_forecasting.ipynb
 
-# 4. Or run API server
-uvicorn main:app --reload
+# 4. Execute cells untuk reproduce hasil
 ```
 
-#### **Access Live Demo**
+#### **Access Live Application**
+Model hasil training telah di-deploy dan dapat diakses di:
 ```bash
-# Web Application
+# Web Application (by deployment team)
 https://synergysquad.up.railway.app/
 
-# API Documentation
+# API Documentation (by deployment team)
 https://backendsynergy-production.up.railway.app/docs
 ```
+
+**Note:** Deployment code berada di repository terpisah. Repository ini fokus pada model development dan research.
+
+---
+
+**Note:** Production deployment code (API & Web App) berada di repository terpisah yang di-maintain oleh tim deployment.
+
 ---
 
 ## 🔬 **Technical Details**
@@ -393,12 +401,30 @@ SARIMAX(
 ## 🤝 **Team: Synergy Squad**
 
 ### 👥 **Core Team Members**
+
+#### **Model Development & Research**
 - **I Putu Ferry Wistika** - ML Engineer & Project Lead
+  - Model development & evaluation
+  - Research documentation
   - GitHub: [@putuwistika](https://github.com/putuwistika)
+
+#### **Business & Data Analysis**  
 - **Lukas Y. Gunawan** - Business Research & Data Insight
+  - Business analysis & domain expertise
+  - Data insights & interpretation
   - GitHub: [@lukas-y](https://github.com/lukas-y)
-- **Haikal Firdaus** - ML Developer
+
+#### **Deployment & Production**
+- **Haikal Firdaus** - ML Developer & Deployment Engineer
+  - API development & production deployment
+  - Web application development
   - GitHub: [@haikalfirdaus](https://github.com/haikalfirdaus)
+
+### 📦 **Project Repositories**
+- **Main Repository (This Repo):** Model development & research
+- **Deployment Repository:** [https://github.com/putuwistika/backend_synergy](https://github.com/putuwistika/backend_synergy)
+
+*Ganti link di atas dengan URL repository GitHub yang sebenarnya dari rekan Anda*
 
 ### 🌟 **Team Philosophy**
 *"Synergized Intelligence - Combining hospitality domain expertise with cutting-edge machine learning to create actionable revenue optimization solutions"*
@@ -431,7 +457,6 @@ SARIMAX(
 ### 🔗 **Connect With Us**
 - **🌐 Live Demo:** [synergysquad.up.railway.app](https://synergysquad.up.railway.app/)
 - **📚 API Docs:** [backendsynergy-production.up.railway.app/docs](https://backendsynergy-production.up.railway.app/docs)
-
 ---
 
 ## 🎓 **Conclusion**
@@ -441,5 +466,8 @@ Forecasting revenue memberikan **nilai tambah nyata** bagi hotel dengan membantu
 ---
 
 *Made with ❤️ by Synergy Squad - Synergized Intelligence*
+
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 **© 2025 Synergy Squad. All rights reserved.**
