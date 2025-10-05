@@ -418,7 +418,7 @@ SARIMAX(
 - **Haikal Firdaus** - ML Developer & Deployment Engineer
   - API development & production deployment
   - Web application development
-  - GitHub: [@haikalfirdaus](https://github.com/haikalfirdaus)
+  - GitHub: [@haikalfirdaus](https://github.com/HaikalFrds)
 
 ### 📦 **Project Repositories**
 - **Main Repository (This Repo):** Model development & research
